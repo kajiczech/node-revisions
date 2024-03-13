@@ -59,7 +59,7 @@ class Node:
         return self.revisions[-1] if self.revisions else None
 
     def refresh(self) -> Revision:
-        """First, figure out if something changed. If so, create a new revision. Then, refresh all slaves. If all slaves
+        """refresh all slaves. Then figure out if something changed. If so, create a new revision. If all slaves
         have complete output, calculate the output of the current revision of the node."""
 
         self.lock()
