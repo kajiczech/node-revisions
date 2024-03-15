@@ -8,6 +8,7 @@ class Revision:
     """
 
     node: "Node"
+    input: str
     hash: str
     input_hash: str
     child_revisions: dict["Node", "Revision"]
